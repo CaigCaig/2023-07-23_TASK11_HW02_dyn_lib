@@ -1,11 +1,6 @@
 #pragma once
 #include <string>
-
-#ifndef LEAVERDYNAMICLIBRARY
-#define LEAVERLIBRARY_API __declspec(dllexport)
-#else
-#define LEAVERLIBRARY_API __declspec(dllimport)
-#endif
+#include "use_dll.h"
 
 using namespace std;
 
