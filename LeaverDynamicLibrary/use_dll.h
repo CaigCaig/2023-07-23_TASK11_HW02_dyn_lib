@@ -1,6 +1,6 @@
 #pragma once
 
-#ifndef LEAVERDYNAMICLIBRARY
+#ifdef LEAVERDYNAMICLIBRARY
 #define LEAVERLIBRARY_API __declspec(dllexport)
 #else
 #define LEAVERLIBRARY_API __declspec(dllimport)

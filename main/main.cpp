@@ -4,6 +4,12 @@
 
 using namespace std;
 
+#ifdef LEAVERDYNAMICLIBRARY
+#define LEAVERLIBRARY_API __declspec(dllexport)
+#else
+#define LEAVERLIBRARY_API __declspec(dllimport)
+#endif
+
 int main()
 {
     setlocale(LC_ALL, "Russian");
